@@ -1,5 +1,6 @@
 import { Send, Users, Image, Heart } from 'lucide-react';
 import { Button } from './ui/button';
+import logo from '../assets/logo.png'
 
 interface LandingPageProps {
   onGetStarted: () => void;
@@ -9,7 +10,14 @@ export function LandingPage({ onGetStarted }: LandingPageProps) {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">
       {/* Hero Section */}
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 py-12">
+        <div className="w-full flex flex-col items-center mb-6">
+          <img src={logo} alt="logo" style={{
+            opacity: "65%",
+            filter: "saturate(3) brightness(1.1)",
+            height: "30vw"
+          }} />
+        </div>
         <div className="text-center mb-16">
           <h1 className="mb-6 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
             Send Beautiful WhatsApp Invitations
@@ -68,7 +76,7 @@ export function LandingPage({ onGetStarted }: LandingPageProps) {
         {/* How It Works */}
         <div className="bg-white rounded-2xl shadow-xl p-8 mb-16">
           <h2 className="text-center mb-12">How It Works</h2>
-          
+
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-purple-600 text-white rounded-full flex items-center justify-center mx-auto mb-4">
@@ -129,7 +137,7 @@ export function LandingPage({ onGetStarted }: LandingPageProps) {
       {/* Footer */}
       <footer className="bg-white border-t border-gray-200 py-8 mt-16">
         <div className="container mx-auto px-4 text-center text-gray-600">
-          <p>© 2025 WhatsApp Invitations. Making celebrations easier.</p>
+          <p>© 2025 EZ Invite. Making celebrations easier.</p>
         </div>
       </footer>
     </div>

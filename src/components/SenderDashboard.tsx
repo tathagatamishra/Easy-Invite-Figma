@@ -66,7 +66,7 @@ export function SenderDashboard({
       <div className="bg-white border-b border-gray-200">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div>
-            <h2 className="text-purple-600">WhatsApp Invitations</h2>
+            <h2 className="text-purple-600">EZ Invite</h2>
             <p className="text-gray-600">Welcome, {user?.user_metadata?.name}</p>
           </div>
           <Button variant="outline" onClick={onLogout}>
