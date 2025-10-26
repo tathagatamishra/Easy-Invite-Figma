@@ -116,7 +116,7 @@ export function EventManagement({ event, accessToken, onBack, onViewGallery }: E
       console.log('Send invitations response:', data);
 
       if (response.ok) {
-        alert('Invitations prepared! In production, these would be sent via WhatsApp Business API. Check the console for invitation links.');
+        alert('Good luck sending Invitation! LOL');
         console.log('Invitation Links:', data.invitations);
       }
     } catch (error) {
@@ -410,8 +410,8 @@ export function EventManagement({ event, accessToken, onBack, onViewGallery }: E
                   </Button>
 
                   <p className="text-sm text-gray-600 text-center">
-                    Note: This is a demo. In production, invitations would be sent via WhatsApp Business API.
-                    You can copy individual guest links from the "Manage Guests" tab.
+                    Note: This is a demo. May be I should send via WhatsApp Business API.
+                    or can copy individual guest links from the "Manage Guests" tab, boring!.
                   </p>
                 </div>
               </CardContent>
